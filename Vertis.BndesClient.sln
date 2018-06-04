@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{00E3F6C2-CBE3-4A2B-8B7A-330D50F6F63B}"
+	ProjectSection(SolutionItems) = preProject
+		build\common.props = build\common.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{066C2F94-9B48-46AF-A80A-908595428E2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{ECAE4478-D8C5-4FE4-A25D-FDC1A2CBB9CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vertis.BndesClient", "src\Vertis.BndesClient\Vertis.BndesClient.csproj", "{BB04B4B1-267B-4D0D-8100-3A7334A8816C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB04B4B1-267B-4D0D-8100-3A7334A8816C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB04B4B1-267B-4D0D-8100-3A7334A8816C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB04B4B1-267B-4D0D-8100-3A7334A8816C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB04B4B1-267B-4D0D-8100-3A7334A8816C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BB04B4B1-267B-4D0D-8100-3A7334A8816C} = {066C2F94-9B48-46AF-A80A-908595428E2D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EC8E231-061B-486A-BD2B-530F98E78EC6}
+	EndGlobalSection
+EndGlobal

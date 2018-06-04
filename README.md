@@ -1,20 +1,25 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# BNDES HTTP Client API
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+| Library Name       | Latest Version | Status |
+|:-------------------|:--------------:|:------:|
+| Vertis.BndesClient |      1.0.0     | [![VSTS](https://img.shields.io/vso/build/vertisnet/62009b64-8b3f-4d27-93c2-95512cf9951f/30.svg)](https://vertisnet.visualstudio.com/Product_Development/_build/index?context=allDefinitions&path=\Kaive&definitionId=30&_a=completed) |
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+# Introduction
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+This repository includes the source code for the **BNDES HTTP Client API**, which can be used to consume the _BNDES web service endpoints_.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://www.visualstudio.com/en-us/docs/git/create-a-readme). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+This repository is part of the **Kaive Platform**. You can find samples, documentation and "Getting Started" instructions for the **Kaive Platform** at the main [Kaive](https://vertisnet.visualstudio.com/Product_Development/_git/Kaive) repository.
+
+# Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For a full list of available versions, see the [tags on this repository](https://vertisnet.visualstudio.com/Product_Development/_git/Kaive.Extensions.Common/tags)
+
+# Target Frameworks
+
+The table below shows a list of supported target frameworks for this library:
+
+| Target Platform Name   | TFM Alias   | Version |
+|:-----------------------|:-----------:|:-------:|
+| .NET Platform Standard | netstandard | 2.0     |
+| .NET Core              | netcoreapp  | 2.0     |
+| .NET Framework         | net         | 4.6.1   |

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\build\common.props" />
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <AssemblyName>Vertis.BndesClient</AssemblyName>
+    <RootNamespace>Vertis.BndesClient</RootNamespace>
+    <Title>Vertis.BndesClient</Title>
+    <PackageTags>$(PackageTags);bndes</PackageTags>
+    <Description>
+      Provides a strongly-typed HTTP client used to connect to the BNDES service endpoints.
+    </Description>
+  </PropertyGroup>
+
+</Project>
