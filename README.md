@@ -2,7 +2,7 @@
 
 | Library Name       | Latest Version | Status |
 |:-------------------|:--------------:|:------:|
-| Vertis.BndesClient |      1.0.2     | [![VSTS](https://img.shields.io/vso/build/vertisnet/62009b64-8b3f-4d27-93c2-95512cf9951f/30.svg)](https://vertisnet.visualstudio.com/Product_Development/_build/index?context=allDefinitions&path=\Kaive&definitionId=30&_a=completed) |
+| Vertis.BndesClient |      1.0.3     | [![VSTS](https://img.shields.io/vso/build/vertisnet/62009b64-8b3f-4d27-93c2-95512cf9951f/30.svg)](https://vertisnet.visualstudio.com/Product_Development/_build/index?context=allDefinitions&path=\Kaive&definitionId=30&_a=completed) |
 
 # Introduction
 
