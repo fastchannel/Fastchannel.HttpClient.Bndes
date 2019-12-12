@@ -158,12 +158,17 @@ namespace Vertis.BndesClient
         }
         public async Task<FinancingSimulationResponse> SimulateAsync(string sessionId, int value, int? requestTimeoutInSeconds = null)
         {
+            var financingSimulationResponse = await SimulateTaxAsync(sessionId).ConfigureAwait(false);
+            if (!financingSimulationResponse.IsHttpStatusCodeOk)
+                return financingSimulationResponse;
+
+            var taxRate = financingSimulationResponse.Tax;
             var httpRequest = new Request(HttpMethod.Get, _settings.FinancingSimulationEndpoint, requestTimeoutInSeconds);
             httpRequest.AddCookie("Cookie", $"CTRL={sessionId}");
             httpRequest.AddQueryString("valor", value.ToFormattedString());
             using (var response = await Client.Execute(httpRequest))
             {
-                var financingSimulationResponse =
+                financingSimulationResponse =
                     new FinancingSimulationResponse { HttpStatusCode = (int)response.StatusCode };
                 // ReSharper disable once SwitchStatementMissingSomeCases
                 switch (response.StatusCode)
@@ -173,6 +178,7 @@ namespace Vertis.BndesClient
                         financingSimulationResponse =
                             BaseResponse.FromJsonString<FinancingSimulationResponse>(
                                 financingSimulationResponse.HttpStatusCode, s);
+                        financingSimulationResponse.Tax = taxRate;
 
                         return financingSimulationResponse;
                     case HttpStatusCode.BadRequest:
