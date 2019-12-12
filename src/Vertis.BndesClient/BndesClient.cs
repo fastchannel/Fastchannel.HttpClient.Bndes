@@ -135,7 +135,7 @@ namespace Vertis.BndesClient
                 {
                     case HttpStatusCode.OK:
                         financingSimulationResponse.Tax =
-                            await response.Content.ReadAsDoubleAsync().ConfigureAwait(false);
+                            await response.Content.ReadAsDoubleAsync(true).ConfigureAwait(false);
                         return financingSimulationResponse;
                     case HttpStatusCode.BadRequest:
                         var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
