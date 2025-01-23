@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{00E3F6C2-CBE3-4A2B-8B7A-330D50F6F63B}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\publish-nuget-on-new-version-tags.yml = .github\workflows\publish-nuget-on-new-version-tags.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{066C2F94-9B48-46AF-A80A-908595428E2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{ECAE4478-D8C5-4FE4-A25D-FDC1A2CBB9CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{07D5A863-E132-434F-8F5F-7E3249C1E995}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		fastchannel.png = fastchannel.png
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fastchannel.HttpClient.Bndes", "src\Fastchannel.HttpClient.Bndes\Fastchannel.HttpClient.Bndes.csproj", "{B22DD438-64FF-4B8C-A41A-720D751124F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B22DD438-64FF-4B8C-A41A-720D751124F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B22DD438-64FF-4B8C-A41A-720D751124F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B22DD438-64FF-4B8C-A41A-720D751124F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B22DD438-64FF-4B8C-A41A-720D751124F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B22DD438-64FF-4B8C-A41A-720D751124F3} = {066C2F94-9B48-46AF-A80A-908595428E2D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EC8E231-061B-486A-BD2B-530F98E78EC6}
+	EndGlobalSection
+EndGlobal

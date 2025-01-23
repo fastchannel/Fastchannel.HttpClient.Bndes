@@ -1,0 +1,94 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <AssemblyName>Fastchannel.HttpClient.Bndes</AssemblyName>
+    <RootNamespace>Fastchannel.HttpClient.Bndes</RootNamespace>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
+
+    <!-- Publish the repository URL in the built .nupkg (in the NuSpec <Repository> element) -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+
+    <!-- Embed source files that are not tracked by the source control manager in the PDB -->
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+
+    <!-- Recommended: Embed symbols containing Source Link in the main file (exe/dll) -->
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+
+  <!-- :: Package Generation :: -->
+  <PropertyGroup>
+    <PackageId>Fastchannel.HttpClient.Bndes</PackageId>
+    <Title>Fastchannel.HttpClient.Bndes</Title>
+    <Authors>Fastchannel</Authors>
+    <Copyright>Copyright 2025, Fastchannel</Copyright>
+    <PackageTags>Fastchannel;HttpClient;Bndes</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>docs/README.md</PackageReadmeFile>
+    <PackageIcon>images/fastchannel.png</PackageIcon>
+    <PackageIconUrl>https://cdn.jsdelivr.net/gh/fastchannel/.github/images/logo-icon-128x128.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/fastchannel/Fastchannel.HttpClient.Bndes</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/fastchannel/Fastchannel.HttpClient.Bndes.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryBranch>main</RepositoryBranch>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>Fastchannel's strongly-typed HttpClient used to connect to the Bndes service endpoints.</Description>
+    <PackageReleaseNotes>
+		- Initial release.
+	</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <!-- :: Deterministic Builds :: -->
+  <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+    <RestoreLockedMode>true</RestoreLockedMode>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+  </PropertyGroup>
+
+  <!-- :: Compilation Constraints :: -->
+  <PropertyGroup>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <NoWarn>1591;1701;1702;1705</NoWarn>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NuGetAuditLevel>critical</NuGetAuditLevel>
+  </PropertyGroup>
+
+  <!-- :: Compilation Constants :: -->
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
+    <DefineConstants>NETSTANDARD</DefineConstants>
+    <DefineConstants>NETSTANDARD1_3</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.4' ">
+    <DefineConstants>NETSTANDARD</DefineConstants>
+    <DefineConstants>NETSTANDARD1_4</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.5' ">
+    <DefineConstants>NETSTANDARD</DefineConstants>
+    <DefineConstants>NETSTANDARD1_5</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard1.6' ">
+    <DefineConstants>NETSTANDARD</DefineConstants>
+    <DefineConstants>NETSTANDARD1_6</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+    <DefineConstants>NETSTANDARD</DefineConstants>
+    <DefineConstants>NETSTANDARD2_0</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netstandard2.0|AnyCPU'">
+    <DebugType>embedded</DebugType>
+    <WarningsNotAsErrors>NU1903</WarningsNotAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
+    <WarningsNotAsErrors>NU1903</WarningsNotAsErrors>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RestSharp" Version="106.3.0" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="..\..\fastchannel.png" Pack="true" PackagePath="images\" />
+    <None Include="..\..\README.md" Pack="true" PackagePath="docs\" />
+  </ItemGroup>
+</Project>

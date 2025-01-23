@@ -1,18 +1,22 @@
-# BNDES HTTP Client API
+# Fastchannel.HttpClient.Bndes
 
-| Library Name       | Latest Version | Status |
-|:-------------------|:--------------:|:------:|
-| Vertis.BndesClient |      1.0.3     | [![VSTS](https://img.shields.io/vso/build/vertisnet/62009b64-8b3f-4d27-93c2-95512cf9951f/30.svg)](https://vertisnet.visualstudio.com/Product_Development/_build/index?context=allDefinitions&path=\Kaive&definitionId=30&_a=completed) |
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/fastchannel/Fastchannel.HttpClient.Bndes/publish-nuget-on-new-version-tags.yml?branch=main&event=push&style=plastic&logo=githubactions&logoColor=white&label=Latest%20Build)
+![GitHub Current Release](https://img.shields.io/github/v/release/fastchannel/Fastchannel.HttpClient.Bndes?sort=semver&display_name=release&style=plastic&logo=github&label=Current%20Release)
+![GitHub Repository Size](https://img.shields.io/github/repo-size/fastchannel/Fastchannel.HttpClient.Bndes?style=plastic&logo=github&label=Repo%20Size)
+
+---
 
 # Introduction
 
 This repository includes the source code for the **BNDES HTTP Client API**, which can be used to consume the _BNDES web service endpoints_.
 
-This repository is part of the **Kaive Platform**. You can find samples, documentation and "Getting Started" instructions for the **Kaive Platform** at the main [Kaive](https://vertisnet.visualstudio.com/Product_Development/_git/Kaive) repository.
+---
 
 # Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For a full list of available versions, see the [tags on this repository](https://vertisnet.visualstudio.com/Product_Development/_git/Kaive.Extensions.Common/tags)
+We use [SemVer](http://semver.org/) for versioning. For a full list of available versions, see the [releases on this repository](https://github.com/fastchannel/Fastchannel.HttpClient.Bndes/releases)
+
+---
 
 # Target Frameworks
 
